@@ -1,0 +1,12 @@
+.about {
+  &__info {
+    height: calc(100vh - 86.5px);
+    background-color: var(--primary-color-light);
+    p {
+      max-width: 80rem;
+      margin: 0 auto;
+      line-height: 2;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+@mixin respond($bp) {
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin flex($direction: "row") {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin circle($radius) {
+  height: $radius;
+  width: $radius;
+  border-radius: 50%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(900px) {
+    font-size: 75%;
+  }
+}
+
+:root {
+  --primary-color-light: #fbf3de;
+  --primary-color: #ffeab9;
+  --primary-color-dark: #5f4200;
+
+  --accent-color: #700000;
+  --accent-color-gradient: #0a0200;
+
+  --red-color: #da0512;
+  --white-color: #fff;
+
+  --ff-headings: "Cinzel", serif;
+  --ff-heading: "Cinzel Decorative", cursive;
+  --ff-primary: "Poppins", sans-serif;
+
+  --transition: all 0.2s linear;
+  --border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: var(--primary-color-dark);
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.section-center {
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn--toggle-open {
+  @include respond(700px) {
+    display: none;
+  }
+}
+
+.btn--toggle-open svg {
+  width: 3rem;
+  background: none;
+}
+
+.btn--toggle-close {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+
+.btn--toggle-close span {
+  color: var(--primary-color-dark);
+  font-size: 3rem;
+
+  &:hover {
+    color: var(--red-color);
+  }
+}
+
+.btn {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-family: inherit;
+  letter-spacing: 2px;
+  width: min(20rem);
+  padding: 1.2rem 2rem;
+  transition: var(--transition);
+
+  &--cta {
+    border: 1.2px solid var(--primary-color);
+    transform: translateY(0.2rem);
+
+    &:hover {
+      color: var(--primary-color);
+      border: 1.2px solid var(--white-color);
+    }
+  }
+
+  &--products {
+    color: var(--red-color);
+    border: 1.2px solid var(--red-color);
+
+    &:hover {
+      color: var(--primary-color);
+      background-color: var(--accent-color);
+    }
+  }
+
+  &--checkout {
+    margin-bottom: 2rem;
+    margin: 2rem auto;
+    font-family: var(--ff-primary);
+  }
+}
+
+.section__title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.6rem;
+  margin-bottom: 5rem;
+  background-color: var(--primary-color-light);
+  padding: 3rem 0;
+
+  span {
+    color: var(--red-color);
+  }
+}
+
+.page {
+  &__header {
+    background-color: var(--accent-color);
+  }
+}
+
+.loading {
+  position: relative;
+  width: 15rem;
+  margin-bottom: 4rem;
+  @include flex;
+
+  &__text {
+    position: absolute;
+    font-size: 2rem;
+  }
+
+  &__spinner {
+    @include circle((15rem));
+    border-left: 2px solid var(--red-color);
+    animation: loading 1s linear infinite;
+  }
+
+  @keyframes loading {
+    100% {
+      rotate: 360deg;
+    }
+  }
+}
