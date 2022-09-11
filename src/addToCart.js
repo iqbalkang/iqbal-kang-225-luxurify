@@ -1,7 +1,7 @@
 import { store } from "./setupStore.js";
 import { Cart } from "./cartClass.js";
 import { addToCartDOM } from "./addToCartDOM.js";
-import { formatPrice, get, getLocalStorage, setLocalStorage } from "./utils.js";
+import { getLocalStorage, setLocalStorage } from "./utils.js";
 import { updateCart } from "./updateCart.js";
 
 export let cartItems;
@@ -37,7 +37,7 @@ export const addToCart = function (e) {
 };
 
 export const loadCart = function () {
-  // cartItems = getLocalStorage("cart");
-  // addToCartDOM(cartItems);
-  // updateCart(cartItems);
+  cartItems = getLocalStorage("cart");
+  addToCartDOM(cartItems);
+  updateCart();
 };

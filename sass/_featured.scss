@@ -3,6 +3,13 @@
   padding: 0 0 6rem;
   text-align: center;
   text-transform: capitalize;
+
+  &__cards {
+    @include respond(900px) {
+      display: flex !important;
+      justify-content: center;
+    }
+  }
 }
 
 .cards {

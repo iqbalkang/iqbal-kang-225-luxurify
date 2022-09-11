@@ -1,9 +1,6 @@
-import { get, setLocalStorage, getLocalStorage } from "./utils.js";
-// import { cartItems } from "./addToCart.js";
+import { get, setLocalStorage } from "./utils.js";
 import { addToCartDOM } from "./addToCartDOM.js";
 import { cartItems } from "./addToCart.js";
-
-// cartItems = getLocalStorage("cart");
 
 const deleteItem = function (e) {
   e.stopImmediatePropagation();
@@ -22,7 +19,6 @@ const deleteItem = function (e) {
 };
 
 const addItem = function (e) {
-  // console.log(cartItems);
   e.stopImmediatePropagation();
 
   const id = e.target.dataset.id;

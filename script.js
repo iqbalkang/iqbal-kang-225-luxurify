@@ -15,7 +15,7 @@ async function init() {
 
   displayProducts(featuredProducts, get(".featured__cards"));
 
-  // loadCart();
+  loadCart();
 }
 
 window.addEventListener("DOMContentLoaded", init);

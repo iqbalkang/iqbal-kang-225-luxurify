@@ -45,6 +45,14 @@
     text-transform: capitalize;
   }
 
+  &__color {
+    @include circle(2rem);
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    cursor: pointer;
+  }
+
   &__company {
     text-transform: uppercase;
     font-family: var(--ff-headings);

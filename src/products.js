@@ -1,7 +1,7 @@
 import "./toggleOverlays.js";
 import { get } from "./utils.js";
 import { store } from "./setupStore.js";
-// import { loadCart } from "./addToCart.js";
+import { loadCart } from "./addToCart.js";
 import { displayProducts } from "./displayProducts.js";
 import {
   searchProduct,
@@ -20,7 +20,7 @@ const init = function () {
 
   productPrice();
 
-  // loadCart();
+  loadCart();
 };
 
 window.addEventListener("DOMContentLoaded", init);

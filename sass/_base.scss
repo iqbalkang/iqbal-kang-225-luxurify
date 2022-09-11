@@ -145,6 +145,11 @@ button {
     margin: 2rem auto;
     font-family: var(--ff-primary);
   }
+
+  &--featured {
+    margin-top: 4rem;
+    display: inline-block;
+  }
 }
 
 .section__title {
@@ -170,6 +175,7 @@ button {
   position: relative;
   width: 15rem;
   margin-bottom: 4rem;
+
   @include flex;
 
   &__text {
