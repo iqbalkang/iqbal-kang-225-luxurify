@@ -1,7 +1,7 @@
 <h1 align="center" id="title">Luxurify</h1>
 
 <p align="center">
-<img src="https://socialify.git.ci/iqbalkang225/iqbal-kang-225-luxurify/image?language=1&name=1&owner=1&theme=Light" />
+<img src="https://socialify.git.ci/iqbalkang225/iqbal-kang-225-luxurify/image?name=1&owner=1&theme=Light" />
 </p>
 
 <p id="description">A haven of home furnishings crafted to create cozy spaces for every corner of your home. From statement furniture pieces to timeless decor find everything to make your space a reflection of your unique style. 
