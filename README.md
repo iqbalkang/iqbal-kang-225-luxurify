@@ -12,16 +12,6 @@ This is a front-end application designed to provide a practical learning experie
 
 [https://iqbal-kang-225-luxurify.vercel.app/](https://iqbal-kang-225-luxurify.vercel.app/)
 
-<h2>🧐 Features</h2>
-
-Here're some of the project's best features:
-
-*   Filterable Product Search
-*   Retain Shopping Cart
-*   Showcase Selection
-
-  
-  
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
@@ -30,13 +20,21 @@ Technologies used in the project:
 *   Scss
 *   VanillaJS
 
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Filterable Product Search
+*   Retain Shopping Cart
+*   Showcase Selection
+
 <h2>Project Screenshots</h2>
 
-<img src="https://res.cloudinary.com/dydbhumso/image/upload/v1685742860/filterableproductsearch_cym0cr.png" alt="project-screenshot" width="800" height="450/">
+<img src="https://luxurify-links.s3.us-west-1.amazonaws.com/filterableproductsearch.png" alt="project-screenshot" width="800">
 
-<img src="https://res.cloudinary.com/dydbhumso/image/upload/v1685742860/retainshoppingcart_h6t6ir.png" alt="project-screenshot" width="800" height="450/">
+<img src="https://luxurify-links.s3.us-west-1.amazonaws.com/retainshoppingcart.png" alt="project-screenshot" width="800" >
 
-<img src="https://res.cloudinary.com/dydbhumso/image/upload/v1685742859/showcaseselection_rcbq27.png" alt="project-screenshot" width="800" height="450/">
+<img src="https://luxurify-links.s3.us-west-1.amazonaws.com/showcaseselection.png" alt="project-screenshot" width="800">
 
 <h2>Conclusion</h2>
 While working on this project I faced some obstacles which allowed me to dive deeper into the complexities of web development and broaden my skill set. I implemented mix of Functional and Object Oriented Programming concepts to develop this website. With this project I gained a better understanding of the whole process of designing and development.
